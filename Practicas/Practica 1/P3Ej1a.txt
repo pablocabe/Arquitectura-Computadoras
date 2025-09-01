@@ -1,0 +1,9 @@
+Instrucción	Valor del registro SP	AX	BX
+1	mov AX, 5	8000h	5	?
+2	mov BX, 3	8000h	5	3
+3	push AX	7FFEh	5	3
+4	push AX	7FFCh	5	3
+5	push BX	7FFAh	5	3
+6	pop BX	7FFCh	5	3
+7	pop BX	7FFEh	5	5
+8	pop AX	800h	5	5
