@@ -1,0 +1,27 @@
+Los siguientes programas leen e imprimen carácteres. Indicar cuáles tienen errores y cómo solucionarlos.
+
+a) El problema es que “HO LA” son 5 caracteres contando el espacio pero solo imprimiría 4 caracteres. Falta int 0. Hay 2 formas de solucionarlo, además de agregar int 0 al final: 
+
+- mov AL, 5
+- mov AL, offset B - offset A
+
+b) La dirección que se le debe enviar a BX es offset A. Además falta el int 0 al final. Se resolvería de la siguiente forma:
+
+- mov BX, offset A
+
+c) La resta entre las direcciones de memoria debe realizarse al revés, sino entra en un loop infinito. Además falta el int 0 al final.
+
+- mov AL, offset B - offset A
+
+d) Es innecesario enviarle el valor 3 a AL para ingresar un carácter. Además falta el int 0 al final. En lugar de mov BX, A, debe realizarse:
+
+- mov BX, offset A.
+
+e) El problema es que primero debe enviarse la dirección a BX y luego utilizar la interrupción 6. Además falta el int 0 al final. Se resolvería de la siguiente forma, invirtiendo el orden:
+
+- mov BX, offset A
+- int 6
+
+f) La dirección que debe enviarse a BX es 1000h, no A. La forma de resolverlo sería la siguiente:
+
+- mov BX, offset A
