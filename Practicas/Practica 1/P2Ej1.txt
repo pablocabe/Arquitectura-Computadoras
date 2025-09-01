@@ -1,0 +1,11 @@
+a) Ejecutar en el simulador ¿Qué imprime?
+
+Imprime “Arquitectura de Computadoras-Facultad de Informática-UNLP”.
+
+b) ¿Por qué imprime “UNLP” al final?
+
+Porque en la zona de variables se encuentra la abreviatura UNLP en Código ASCII, con sus respectivos valores hexadecimales.
+
+c) Con referencia a la interrupción INT 7, ¿Qué se almacena en los registros BX y AL?
+
+En BX se almacena la dirección desde donde se empieza a leer y en AL se almacena la cantidad de caracteres a imprimir.
