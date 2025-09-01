@@ -1,4 +1,4 @@
-Instrucción	Valor del registro SP	AX	BX
+#	Instrucción	Valor del registro SP	AX	BX
 1	mov AX, 5	8000h	5	?
 2	mov BX, 3	8000h	5	3
 3	push AX	7FFEh	5	3
