@@ -1,0 +1,11 @@
+a) Con referencia a la interrupción INT 6, ¿Qué se almacena en BX?
+
+En BX se almacena la dirección donde se guardará el carácter leído (1500h).
+
+b) En el programa anterior, ¿Qué hace la segunda interrupción INT 7?
+
+INT 7 imprime un número de un digito. 
+
+c) ¿Qué valor queda almacenado en el registro CL? ¿Es el mismo que el valor numérico ingresado?
+
+En el registro CL queda almacenado el mismo número leído pero en formato hexadecimal.
