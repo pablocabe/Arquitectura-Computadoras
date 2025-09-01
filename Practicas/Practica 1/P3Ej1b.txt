@@ -1,0 +1,10 @@
+#	Instrucción	Valor del registro SP
+1	ORG 3000h	-
+2	rutina: mov BX, 3	7FFCh
+3	ret	7FFEh
+4	ORG 2000h	-
+5	push AX	7FFEh
+6	call rutina	7FFCh
+7	pop BX	8000h
+8	hlt	8000h
+9	END	-
